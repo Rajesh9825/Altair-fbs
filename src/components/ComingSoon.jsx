@@ -3,8 +3,7 @@ import { useEffect, useState } from "react";
 import logo from "../assets/altair-logo.png";
 
 export default function ComingSoon() {
-  const launchDate = new Date();
-  launchDate.setDate(launchDate.getDate() + 7);
+  const launchDate = new Date("2026-05-26T12:00:00");
 
   const calculateTimeLeft = () => {
     const difference = launchDate - new Date();
@@ -52,7 +51,7 @@ export default function ComingSoon() {
         <img
           src={logo}
           alt="Altair Logo"
-          className="w-72 mx-auto mb-10"
+          className="w-40 md:w-48 mx-auto mb-8"
         />
 
         <p className="uppercase tracking-[0.25em] text-[#1C6AA8] font-semibold mb-6">
